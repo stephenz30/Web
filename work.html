@@ -1,39 +1,113 @@
 <!DOCTYPE html>
 <html>
-<table border="1" width="600" align="center" bgcolor="DimGray">
-<caption><h1>物资登记表<h1></caption>
-<tr>
-<td colspan="2">物资类别</td>
-<td colspan="2"></td>
-<td colspan="2">名称</td>
-<td colspan="2"></td>
 
-</tr>
+<table border="1" width="400"align="center" style="border-collapse:collapse;" cellpadding="5">
+<form action="http://10.7.1.98/taozhuo/form_data.php" method="get">
+
 <tr>
-<td colspan="8" align="center" >入库领用记录</td>
+<td colspan="2" align="left">用户名：</td> 
+<td colspan="3" align="left"><input type="text" name="name"></td>
 </tr>
 
 <tr>
-<td colspan="2" align="center">日期</td>
-<td rowspan="2" align="center">单位</td>
-<td rowspan="2" colspan="2" align="center">入库数</td>
-<td rowspan="2" align="center">领用数</td>
-<td rowspan="2" align="center">库存</td>
-<td rowspan="2" align="center">经手人</td>
+<td colspan="2" align="left">密码：</td>
+<td colspan="3" align="left"><input type="password" name="password"></td>
 </tr>
 
 <tr>
-<td>月</td>
-<td>日</td>
+<td colspan="2" align="left">确认密码：</td>
+<td colspan="3" align="left"><input type="password" name="password"></td>
 </tr>
 
-<tr><td></td> <td>&nbsp</td><td></td><td colspan="2"></td><td></td><td></td><td></td></tr>
-<tr><td></td> <td>&nbsp</td><td></td><td colspan="2"></td><td></td><td></td><td></td></tr>
-<tr><td></td> <td>&nbsp</td><td></td><td colspan="2"></td><td></td><td></td><td></td></tr>
-<tr><td></td> <td>&nbsp</td><td></td><td colspan="2"></td><td></td><td></td><td></td></tr>
-<tr><td></td> <td>&nbsp</td><td></td><td colspan="2"></td><td></td><td></td><td></td></tr>
-<tr><td></td> <td>&nbsp</td><td></td><td colspan="2"></td><td></td><td></td><td></td></tr>
+<tr>
+<td colspan="2" align="left">性别：</td>
+<td colspan="3" align="left"><input type="radio" name="sex">男<input type="radio" name="sex">女</td>
+</tr>
 
+
+<tr>
+<td colspan="2" align="left">生日：</td>
+<td colspan="3"><select>
+<option>公历</option>
+</select>
+<select>
+<option>年</option>
+<option>1999</option>
+<option>1998</option>
+<option>1997</option>
+</select>
+<select>
+<option>月</option>
+<option>3</option>
+<option>2</option>
+<option>1</option>
+</select>
+<select>
+<option>日</option>
+<option>6</option>
+<option>5</option>
+<option>4</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="left">所在地：</td>
+<td colspan="3"><select>
+<option>中国</option>
+</select>
+<select>
+<option>河北</option>
+</select>
+<select>
+<option>石家庄</option>
+<option>张家口</option>
+</select>
+</td>
+
+<tr>
+<td colspan="2" align="left">验证码：</td>
+<td colspan="3"><input type="text" name="yanzhengma">
+<img src="image/20170331221433.jpg"></td>
+</tr>
+
+<tr>
+<td colspan="2" align="left">证件类型：</td>
+<td colspan="3"><select>
+<option>身份证</option>
+<option>学生证</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="left">证件号：</td>
+<td colspan="3"><input type="text" name="zhengjianhao"></td>
+</tr>
+
+<tr>
+<td colspan="2" align="left">爱好</td>
+<td colspan="3" align="left"><input type="checkbox" name="hobby">音乐<input type="checkbox" name="hobby">读书<input type="checkbox" name="hobby">跳舞<input type="checkbox" name="hobby">下棋<input type="checkbox" name="hobby">其他</td>
+</tr>
+
+<tr>
+<td colspan="2" align="left" >说明：</td>
+<td colspan="3" ><textarea rows="3" cols="3" style="width: 180px ; height: 90px"></textarea></td>
+</tr>
+
+<tr>
+<td colspan="2" align="left">上传头像</td>
+<td colspan="3"><input type="file" name="photo"></td>
+</tr>
+
+<tr>
+<td colspan="5" align="center"><input type="submit" name="提交">
+<input type="button" name="重置" value="重置">
+<input type="button" name="按钮" value="按钮">
+</td>
+</tr>
+
+</form>
 </table>
 
 </body>
